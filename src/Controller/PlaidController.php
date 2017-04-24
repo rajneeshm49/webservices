@@ -31,10 +31,7 @@ class PlaidController extends AppController
 // 		$resp = '';
 		$plaid_obj = new PlaidApi();
 		$resp = $plaid_obj->exchange($data);
-		if($resp['success']) {
-			$this->loadModel('UserAccessTokens');
-			$this->UserAccessTokens->saveAccessToken($resp['data']['access_token'], $data);
-		}
+
 		$resultJ = json_encode($resp);
 		$this->response->body($resultJ);
 		return $this->response;
