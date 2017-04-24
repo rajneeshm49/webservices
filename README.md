@@ -1,6 +1,6 @@
-This is a webservice implemented. All it using soap UI or advanced REST CLient plugin on chrome browser.
-
-run composer install in root directory, if it shows vendor/autoload error.
+This is a webservice implemented.
+It can be executed using soap UI or advanced REST CLient plugin on chrome browser.
+Run composer install in root directory, if it shows vendor/autoload error.
 The input should be 
 {
 	"access_token": "access-sandbox-e6a609bd-4be8-4f1a-a754-fad52b800bee",
